@@ -6,7 +6,6 @@ const clickToPlayBtn = document.querySelector(".play-music");
 const secondSec = document.querySelector(".second-sec");
 const playBtn = document.querySelector(".play-btn");
 const pauseBtn = document.querySelector(".pause-btn");
-const trackImage = document.querySelector(".img");
 ///////////////////////
 window.addEventListener("onLoad", hideWelcome);
 
@@ -35,11 +34,11 @@ document.querySelector("#upload").addEventListener("change", (event) => {
       }
 
       // Output media tags
-      document.querySelector(
-        "#cover"
-      ).style.backgroundImage = `url(data:${format};base64,${window.btoa(
-        base64String
-      )})`;
+      // document.querySelector(
+      //   "#cover"
+      // ).style.backgroundImage = `url(data:${format};base64,${window.btoa(
+      //   base64String
+      // )})`;
 
       let titleLength = (document.querySelector("#title").textContent =
         tag.tags.title);

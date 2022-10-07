@@ -84,7 +84,7 @@ input[type="file"] {
 label {
   color: var(--white);
   height: 50px;
-  width: 330px;
+  width: 310px;
   background-color: #41464d;
   border-radius: 3px;
   font-size: 20px;
@@ -123,6 +123,7 @@ label {
 }
 
 #cover {
+  background: url(/images/new\ logo.jpg);
   width: 165px;
   height: 165px;
   border-radius: 50%;
@@ -168,12 +169,12 @@ button {
 }
 
 button > * {
-  padding: 1rem;
+  padding: 0.8rem;
 }
 
 .up-btn,
 .down-btn {
-  padding: 1.5rem 1rem;
+  padding: 1.2rem 0.8rem;
 }
 
 @media screen and (max-width: 600px) {
