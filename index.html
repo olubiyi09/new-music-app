@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <script
+      src="https://kit.fontawesome.com/1935d064dd.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- CSS only -->
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="main">
+      <section class="first-sec">
+        <div class="container">
+          <div class="welcome-wrapper">
+            <p class="welcome">Welcome to my Music Player</p>
+            <!-- <button class="play-music">Click here to Play Music</button> -->
+          </div>
+        </div>
+      </section>
+
+      <section class="second-sec">
+        <div class="to-flex">
+          <div class="neu">
+            <input type="file" id="upload" accept="audio/" />
+            <label for="upload">
+              <i class="fas fa-headphones"></i> Choose a Song</label
+            >
+          </div>
+
+          <div class="neu">
+            <div class="play-features">
+              <audio id="audio">
+                <source src="" id="src" />
+              </audio>
+              <!--  -->
+              <div class="align">
+                <div id="cover"></div>
+                <p id="title"></p>
+                <p id="artist"></p>
+              </div>
+
+              <!--  -->
+              <div class="ad">
+                <button
+                  class="play-btn neu"
+                  onclick="document.getElementById('audio').play()"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button
+                  class="pause-btn neu"
+                  onclick="document.getElementById('audio').pause()"
+                >
+                  <i class="fas fa-pause"></i>
+                </button>
+                <button
+                  class="up-btn neu"
+                  onclick="document.getElementById('audio').volume+=0.1"
+                >
+                  Volume Up
+                </button>
+                <button
+                  class="down-btn neu"
+                  onclick="document.getElementById('audio').volume-=0.1"
+                >
+                  Volume Down
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
